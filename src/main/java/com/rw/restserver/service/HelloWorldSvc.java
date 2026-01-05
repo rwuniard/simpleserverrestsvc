@@ -23,4 +23,5 @@ public class HelloWorldSvc {
         log.info("Getting user");
         return new User("Jim");
     }
+
 }
