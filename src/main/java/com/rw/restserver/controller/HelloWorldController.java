@@ -36,6 +36,12 @@ public class HelloWorldController {
         return helloWorldSvc.getUser();
     }
 
+    // GET /api/myworld - returns "My World"
+    @GetMapping(value = "/myworld", produces = MediaType.TEXT_PLAIN_VALUE)
+    public String getMyWorld() {
+        return helloWorldSvc.getMyWorld();
+    }
+
     public record HelloRequest(String name) {}
 }
 

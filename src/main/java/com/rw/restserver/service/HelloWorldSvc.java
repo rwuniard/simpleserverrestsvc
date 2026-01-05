@@ -24,4 +24,9 @@ public class HelloWorldSvc {
         return new User("Jim");
     }
 
+    public String getMyWorld() {
+        log.info("Getting my world");
+        return "My World";
+    }
+
 }
